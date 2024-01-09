@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+    color: #2d3142;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #ffffff;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg); 
+    background-color: black;
+  }
+  .header img {
+    height: 80px;
+    width: 80px;
+    align-content: center;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color: #f8f8f8;
+  }
+  .header p {
+    font-size: medium;
+    color: #f8f8f8;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #ef8354;
+   }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #2d3142;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ef233c;
+    color: #2b2d42;
+  }
+  
+
+
+
+  .CityRight {
+    float: left;
+    padding-left: 50px;
+  }
+  /* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  /* width: 25%;
+  height: 80%; */
+  padding: 0px;
+  border: 3px solid #457b9d;
+  position: fixed;
+  top: 480px;
+  right: 80px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/02/08/12/46/moon-2048727_1280.jpg);
+  background-attachment: scroll;
+  background-size: cover;
+}
+.rightcolumn p {
+  color: white;
+}
+.rightcolumn h2 {
+  color: white;
+}
+.rightcolumn h5 {
+  color: white;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #e3d5ca;
+  margin-top: 20px;
+  float: left;
+  width: 70%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+img.CityImage {
+  height: 450px;
+  width: 650px;
+  padding: 0px;
+  border: 3px solid #457b9d;
+  margin: 0;
+
+}
+a {
+  text-decoration: none;
+  color: #a8dadc;
+}
+a:hover {
+  color: #457b9d;
+}
+hr.rounded {
+  border-top: 4px solid #457b9d;
+  border-radius: 3px;
+}
+img.SideImage {
+  width: 80px;
+  height: 80px;
+}
